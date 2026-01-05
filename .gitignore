@@ -1,0 +1,8 @@
+node_modules
+.turbo
+.DS_Store
+postgres_data
+.env
+/apps/api/bin
+/apps/api/tmp
+.next

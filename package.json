@@ -1,0 +1,23 @@
+{
+  "name": "ubc-rocket-admin",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "db:up": "docker-compose up -d",
+    "db:down": "docker-compose down",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "turbo": "latest",
+    "prettier": "latest"
+  },
+  "packageManager": "npm@10.2.0",
+  "engines": {
+    "node": ">=22.14.0"
+  }
+}
